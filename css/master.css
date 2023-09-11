@@ -40,10 +40,19 @@ header {
 .blu-buttons{
     background-color: #0061FF;
     color: white;
+    font-size: 12px;
     font-weight: 400;
     padding: 10px 20px;
 }
 
+a > .blu-buttons {
+    font-size: 18px;
+}
+
+.buy-now {
+    text-decoration: underline;
+    color: blue;
+}
 .checkbox__span {
     padding-right: 60px;
 }
@@ -183,8 +192,9 @@ CONTAINERS MANAGMENT  */
     flex-basis: calc((100% / 12) * 3);
 }
 
-.col-4 {
+.col-4:not(.col-4__header-right ) {
     flex-basis: calc((100% / 12) * 4);
+    padding-right: 50px;
 }
 
 .col-4__header-right {
@@ -210,7 +220,8 @@ CONTAINERS MANAGMENT  */
 
 .pro-plan {
     padding: 30px;
-    padding-left: 60px;
+    padding-left: 45px;
+    padding-right: 50px;
 }
 
 /* SECTIONS AND BACKGROUNDS  */
