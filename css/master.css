@@ -87,6 +87,12 @@ h6 {
     padding-bottom: 25px;
 }
 
+.p__cards-last {
+    padding-top: 45px;
+}
+
+
+
 .time-plan {
     padding-bottom: 60px;
 }
@@ -124,6 +130,8 @@ CONTAINERS MANAGMENT  */
 .container-plans {
     padding-top: 60px ;
 }
+
+
 
 /* FLEX SECTION  */
 
@@ -173,6 +181,7 @@ CONTAINERS MANAGMENT  */
 
 .card {
     border: 1px solid lightgray;
+    font-size: 16px;
 }
 
 .pro-plan {
