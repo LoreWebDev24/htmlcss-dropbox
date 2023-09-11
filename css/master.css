@@ -60,12 +60,35 @@ h3 {
     padding-bottom: 50px;
 }
 
+h5 {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 25px;
+}
+
+h6 {
+    padding-bottom: 25px;
+}
+
+.choose-plan{
+   padding: 10px;
+}
+
+
 .p__jumbotron {
     padding-bottom: 40px;
 }
 
 .p__jumbotron-bottom {
     margin-top: 60px ;
+}
+
+.p__cards {
+    padding-bottom: 25px;
+}
+
+.time-plan {
+    padding-bottom: 60px;
 }
 
 .header__li {
@@ -96,6 +119,10 @@ CONTAINERS MANAGMENT  */
 .container-mid {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.container-plans {
+    padding-top: 60px ;
 }
 
 /* FLEX SECTION  */
@@ -142,6 +169,14 @@ CONTAINERS MANAGMENT  */
 
 .col-12 { 
     flex-basis: calc((100% / 12) * 12);
+}
+
+.card {
+    border: 1px solid lightgray;
+}
+
+.pro-plan {
+    padding: 30px;
 }
 
 /* SECTIONS AND BACKGROUNDS  */
