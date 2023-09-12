@@ -41,6 +41,16 @@ header {
     width: 50%;
 }
 
+.partner-img {
+    -webkit-filter: invert(100%); 
+    filter: invert(100%);
+}
+
+svg {
+    fill: white;
+    color: white;
+}
+
 
 .blu-buttons {
     background-color: #0061FF;
@@ -227,6 +237,10 @@ CONTAINERS MANAGMENT  */
     flex-wrap: wrap;
 }
 
+div.big-partner-badge {
+    padding:40px;
+}
+
 
 /* FLEX SECTION  */
 
@@ -273,6 +287,10 @@ div.row.row-gap {
     justify-content: center;
     align-items: center;
     height: 320px;
+}
+
+.container-fluid-flex {
+    display: flex;
 }
 
 /* FLEX-ITEMS SECTION  */
@@ -363,4 +381,24 @@ div.col-4.no-padding {
     padding-top: 60px;
 }
 
+.bg-green {
+    background-color: #A2D39B;
+}
 
+.bg-bordeaux {
+    background-color:#61082B
+}
+
+.bg-bluette {
+    background-color: #0093CE;
+}
+
+.bg-red {
+    background-color: #FF1C1C;
+}
+.partner-badge-border {
+    border: 12px solid #D1E9CD;
+}
+.container1-3-middle {
+    background-color: #F5F5F5;
+}
