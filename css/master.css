@@ -37,6 +37,10 @@ header {
     display: block;
 }
 
+.partner-img {
+    width: 50%;
+}
+
 
 .blu-buttons {
     background-color: #0061FF;
@@ -213,6 +217,15 @@ CONTAINERS MANAGMENT  */
     padding-top: 60px ;
 }
 
+.ads {
+    max-width: 70%;
+}
+
+.container1-3 {
+    max-width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /* FLEX SECTION  */
@@ -253,6 +266,13 @@ div.row.row-gap {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.partner-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
 }
 
 /* FLEX-ITEMS SECTION  */
@@ -328,7 +348,7 @@ div.col-4.no-padding {
 
 /* SECTIONS AND BACKGROUNDS  */
 
-.partners {
+.partners, .dropbox-users {
     padding: 60px;
 }
 
@@ -342,3 +362,5 @@ div.col-4.no-padding {
     padding-bottom: 60px;
     padding-top: 60px;
 }
+
+
