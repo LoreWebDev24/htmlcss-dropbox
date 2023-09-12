@@ -20,13 +20,10 @@ ul, li, menu {
     list-style-position: outside;
 }
 
-
-
 a {
     text-decoration: none;
     color: currentColor;
 }
-
 
 /* END OF RESETTIN' RULES */
 
@@ -36,17 +33,38 @@ header {
     height: 85px;
 }
 
+.logo {
+    display: block;
+}
 
-.blu-buttons{
+
+.blu-buttons {
     background-color: #0061FF;
     color: white;
     font-size: 12px;
     font-weight: 400;
-    padding: 10px 20px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+}
+
+.white-buttons-solid {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 a > .blu-buttons {
     font-size: 18px;
+}
+
+span.blu-buttons {
+    padding: 10px 37px;
 }
 
 .buy-now {
@@ -68,9 +86,15 @@ h1 {
 }
 
 h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 42px;
     padding-bottom: 50px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+
 }
 
 h5 {
@@ -79,19 +103,46 @@ h5 {
     padding-bottom: 25px;
 }
 
+h6 {
+    font-size: 24px;
+}
+
 h6.p__cards {
     padding-bottom: 10px;
     font-size: 24px;
 }
 
 p.p__cards.priece {
-    font-size: 18px ;
+    font-size: 16px ;
     font-weight: 700;
     padding-bottom: 10px;
+    margin-left: -3px;
 }
 
 p.p__cards.time-plan {
     padding-bottom: 50px;
+    color: lightgray;
+    margin-left: -3px;
+}
+
+.p__enterprise {
+    padding-top: 55px;
+    width: 72%;
+    font-size: 14px;
+    color: black;
+}
+
+.p__partners {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.p__ex  {
+    padding-top: 30px;
+}
+
+strong:not(.not-indented) {
+    margin-left: -12px;
 }
 
 .choose-plan{
@@ -104,13 +155,15 @@ p.p__cards.time-plan {
 }
 
 .p__jumbotron-bottom {
-    margin-top: 60px ;
+    margin-top: 40px ;
+    font-size: 32px;
 }
 
 .p__cards {
     padding-bottom: 25px;
     display:block;
     text-indent: -0.6em;
+    
 }
 
 .h7{
@@ -124,7 +177,6 @@ p.p__cards.time-plan {
     padding-bottom: 45px;
 }
 
-
 .header__li {
     padding-right: 30px;
 }
@@ -134,9 +186,6 @@ p.p__cards.time-plan {
     padding-top: 100px;
 }
 
-.select-plans {
-    padding-top: 100px;
-}
 
 .half-border {
     border-top: 0.1px solid;
@@ -147,7 +196,7 @@ p.p__cards.time-plan {
 CONTAINERS MANAGMENT  */
 
 .container-fluid {
-    width: 100%;
+    max-width: 100%;
 }
 
 .container-big {
@@ -168,10 +217,21 @@ CONTAINERS MANAGMENT  */
 
 /* FLEX SECTION  */
 
-.row {
+.row, .row-2 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap:  wrap;
+}
+
+.row-partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    align-items: center;
+}
+
+.row-2 {
+    margin-bottom: 50px;
 }
 
 .row-space-between {
@@ -180,6 +240,19 @@ CONTAINERS MANAGMENT  */
     align-items: center;
     justify-content: space-between;
     height: 85px;
+}
+
+div.row.row-gap {
+    gap: 30px;
+    flex-wrap: nowrap;
+    padding-bottom: 40px;
+}
+
+.enterprise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* FLEX-ITEMS SECTION  */
@@ -192,9 +265,13 @@ CONTAINERS MANAGMENT  */
     flex-basis: calc((100% / 12) * 3);
 }
 
-.col-4:not(.col-4__header-right ) {
+.col-4:not(.col-4__header-right) {
     flex-basis: calc((100% / 12) * 4);
-    padding-right: 50px;
+    padding-right: 25px;
+}
+
+div.col-4.no-padding {
+    padding-right: 0px;
 }
 
 .col-4__header-right {
@@ -207,6 +284,12 @@ CONTAINERS MANAGMENT  */
 
 .col-8 {
     flex-basis: calc((100% / 12) * 8);
+    padding-right: 50px;
+    
+}
+
+.col-9 {
+    flex-basis: calc((100% / 12) * 9);
 }
 
 .col-12 { 
@@ -216,13 +299,46 @@ CONTAINERS MANAGMENT  */
 .card {
     border: 1px solid lightgray;
     font-size: 16px;
+    height: 100%;
 }
 
 .pro-plan {
     padding: 30px;
     padding-left: 45px;
-    padding-right: 50px;
+    padding-right: 45px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.enterprise {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.enterprise-core {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
 }
 
 /* SECTIONS AND BACKGROUNDS  */
 
+.partners {
+    padding: 60px;
+}
+
+
+.select-plans {
+    padding-top: 100px;
+    padding-top: 150px;
+}
+
+.dropbox-ex {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
