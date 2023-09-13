@@ -153,7 +153,11 @@ h3 {
 h4 {
     font-size: 20px;
     font-weight: 700;
+}
 
+.titles-footer {
+    color: white;
+    padding-bottom: 25px;
 }
 
 h5 {
@@ -256,6 +260,14 @@ strong:not(.not-indented) {
     margin-top: 45px ;
 }
 
+.footer-li {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    display: block;
+    padding-bottom: 10px;
+}
+
 /* 
 CONTAINERS MANAGMENT  */
 
@@ -353,6 +365,10 @@ div.row.row-gap {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+.footer-row {
+    gap: 50px;
 }
 
 /* FLEX-ITEMS SECTION  */
@@ -455,7 +471,7 @@ div.col-12.border-bottom {
 
 /* SECTIONS AND BACKGROUNDS  */
 
-.partners, .dropbox-users, .dropbox-tryal {
+.partners, .dropbox-users, .dropbox-tryal,.footer-1 {
     padding: 60px;
 }
 
@@ -517,4 +533,8 @@ div.col-12.border-bottom {
 
 .bg-yellow {
     background-color: #FFD830;
+}
+
+.footer-1 {
+    background-color: #000000;
 }
