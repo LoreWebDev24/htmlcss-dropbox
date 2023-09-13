@@ -22,6 +22,11 @@ ul, li, menu {
 select {
     border: none;
     margin-right: 40px;
+    background-color: transparent;
+}
+
+select.grey-select {
+    color: grey;
 }
 
 a {
@@ -236,7 +241,6 @@ strong:not(.not-indented) {
     padding-bottom: 25px;
 }
 
-
 .p__cards-last {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -260,6 +264,15 @@ strong:not(.not-indented) {
     margin-top: 45px ;
 }
 
+.div-border {
+    display: block;
+	width: 120px;
+	height: 1px;
+	background-color: white;
+    margin-top: 80px ;
+    margin-bottom: 45px;
+}
+
 .footer-li {
     color: white;
     font-size: 14px;
@@ -268,6 +281,14 @@ strong:not(.not-indented) {
     padding-bottom: 10px;
 }
 
+.footer-2__span {
+    color: grey;
+    font-size: 14px;
+}
+
+.fa-solid.fa-earth-europe {
+    padding-right: 10px;
+}
 /* 
 CONTAINERS MANAGMENT  */
 
