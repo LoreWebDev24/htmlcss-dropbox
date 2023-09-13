@@ -13,7 +13,6 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 ul, li, menu {
     display: inline-block;
     vertical-align: middle;
@@ -51,12 +50,6 @@ header {
     display: block;
 }
 
-svg {
-    fill: white;
-    color: white;
-}
-
-
 .blu-buttons {
     background-color: #0061FF;
     color: white;
@@ -65,7 +58,25 @@ svg {
     line-height: 24px;
     text-align: center;
     display: block;
+    white-space: nowrap;
 }
+
+span.blu-buttons.inline-block {
+    display: inline-block;
+}
+
+/* .bill-rate > input {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	appearance: none;
+	margin-bottom: 2px;
+}
+
+.bill-rate > input:checked {
+	border: 5px solid blue;
+} */
 
 .white-buttons-solid {
     background-color: white;
@@ -76,6 +87,7 @@ svg {
     text-align: center;
     border: 1px solid black;
     padding: 10px;
+    white-space: nowrap;
 }
 
 a > .blu-buttons {
@@ -172,7 +184,6 @@ strong:not(.not-indented) {
    padding: 10px;
 }
 
-
 .p__jumbotron {
     padding-bottom: 40px;
 }
@@ -189,8 +200,7 @@ strong:not(.not-indented) {
     
 }
 
-.h7{
-    padding-top: 45px;
+.h7 {
     padding-bottom: 25px;
 }
 
@@ -209,11 +219,14 @@ strong:not(.not-indented) {
     padding-top: 100px;
 }
 
-
-.half-border {
-    border-top: 0.1px solid;
-    border-image: linear-gradient(to right, lightgray 50%, transparent 50%) 100% 1;
-  }
+.card-plan__cta::after {
+	content: '';
+	display: block;
+	width: 48px;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 45px ;
+}
 
 /* 
 CONTAINERS MANAGMENT  */
@@ -282,6 +295,11 @@ div.row.row-gap {
     gap: 30px;
     flex-wrap: nowrap;
     padding-bottom: 40px;
+}
+
+.span-flexed-checkbox {
+    display: flex;
+    gap: 20px;
 }
 
 .enterprise {

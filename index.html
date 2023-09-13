@@ -68,7 +68,7 @@
                         Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                     </p>
                     <p class="p__jumbotron">
-                        <a href=""><span class="blu-buttons">Inizia la tua prova gratuita</span></a>
+                        <a href=""><span class="blu-buttons inline-block">Inizia la tua prova gratuita</span></a>
                     </p>
                     <p class="p__jumbotron">
                         <a href="">Annulla in qualsiasi momento</a>
@@ -87,17 +87,19 @@
     <section class="select-plans">
         <div class="container-mid container-mid-checkboxes">
             <h3>Trova il piano business che fa per te</h3>
-            <input class="checkbox" type="checkbox" name="Fatturazione-Mensile" id="Fatturazione-Mensile"> 
-            <span class="checkbox__span">Fatturazione Mensile</span>
-            <input class="checkbox"  type="checkbox" name="Fatturazione-Mensile" id="Fatturazione-Mensile">
-            <span class="checkbox__span">Fatturazione Annuale</span>
+            <span class="span-flexed-checkbox">
+                <input class="bill-rate" type="radio" checked name="bill-rate"/>
+                <label for="">Fatturazione mensile</label>
+                <input class="bill-rate" type="radio" name="bill-rate"/>
+                <label for="">Fatturazione annuale</label>
+            </span>
         </div>
         <div class="container-mid container-plans">
             <div class="row">
                 <div class="col-4">
     <!-- CARD 1  -->
                     <div class="card">
-                        <p><h5 class="choose-plan"><i class="fa-solid fa-user"></i> Singolo</h5></p>
+                        <h5 class="choose-plan"><i class="fa-solid fa-user"></i> Singolo</h5>
                         <div class="pro-plan">
                             <h6 class="p__cards" >Professional</h6>
                             <p class="p__cards priece">&euro; 12.00</p>
@@ -108,8 +110,8 @@
                                 <li class="p__cards time-plan"><i class="high-i fa-solid fa-share-nodes"></i> Funzioni di produttività premium e condivisione file semplice e sicura</li>
                             </ul>
                             <span class="blu-buttons"><a href="">Prova gratis per 30 giorni</a></span>
-                            <p class="p__cards-last">oppure <a class="buy-now" href="">acquista ora</a></p>
-                            <hr class="half-border ">
+                            <p class="p__cards-last card-plan__cta">oppure <a class="buy-now" href="">acquista ora</a></p>
+                            <!-- ::after -->
                             <p class="h7"><strong>Punti Salienti del piano</strong></p>
                             <ul class="second-list p__cards">
                                 <li class="p__cards"><i class="fa-solid fa-check" style="color: #015efe;"></i> Invia fino a 10gb con DropBox Transfert
@@ -121,7 +123,7 @@
 <!-- CARD 2 -->
                 <div class="col-4">
                     <div class="card">
-                        <p><h5 class="choose-plan"><i class="fa-solid fa-users"></i> Team</h5></p>
+                        <h5 class="choose-plan"><i class="fa-solid fa-users"></i> Team</h5>
                         <div class="pro-plan">
                             <h6 class="p__cards" >Advanced</h6>
                             <p class="p__cards priece">18.00 &euro;  </p>
@@ -132,8 +134,8 @@
                                 <li class="p__cards time-plan"><i class="high-i fa-solid fa-share-nodes"></i> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
                             </ul>
                             <span class="blu-buttons"><a href="">Prova gratis per 30 giorni</a></span>
-                            <p class="p__cards-last">oppure <a class="buy-now" href="">acquista ora</a></p>
-                            <hr class="half-border ">
+                            <p class="p__cards-last card-plan__cta">oppure <a class="buy-now" href="">acquista ora</a></p>
+                            <!-- ::after -->
                             <p class="h7"><strong>Punti Salienti del piano</strong></p>
                             <ul class="second-list p__cards">
                                 <li class="p__cards"><i class="fa-solid fa-check" style="color: #015efe;"></i> Nessun limite di spazio per i file</li>
@@ -148,7 +150,7 @@
 <!-- CARD 3  -->
                 <div class="col-4">
                     <div class="card">
-                        <p><h5 class="choose-plan"><i class="fa-solid fa-building"></i> Azienda</h5></p>
+                        <h5 class="choose-plan"><i class="fa-solid fa-building"></i> Azienda</h5>
                         <div class="pro-plan">
                             <h6 class="p__cards" >Professional</h6>
                             <p class="p__cards priece">Contattaci</p>
@@ -159,8 +161,8 @@
                                 <li class="p__cards time-plan"><i class="high-i fa-solid fa-share-nodes"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                             </ul>
                             <span class="blu-buttons"><a href="">Contattaci</a></span>
-                            <p class="p__cards-last">oppure <a class="buy-now" href="">acquista ora</a></p>
-                            <hr class="half-border ">
+                            <p class="p__cards-last card-plan__cta">oppure <a class="buy-now" href="">acquista ora</a></p>
+                            <!-- ::after -->
                             <p class="h7"><strong>Punti Salienti del piano</strong></p>
                             <ul class="second-list p__cards">
                                 <li class="p__cards"><i class="fa-solid fa-check" style="color: #015efe;"></i> Cartelle offline su dispositivi mobili</li>
