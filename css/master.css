@@ -46,6 +46,10 @@ header {
     display: block;
 }
 
+.jumbo {
+    margin-bottom: -100px;
+}
+
 .figure__partner {
     padding-bottom: 40px;
 }
@@ -226,8 +230,8 @@ strong:not(.not-indented) {
 }
 
 .p__jumbotron-bottom {
-    margin-top: 40px ;
-    font-size: 32px;
+    font-size: 22px;
+    /* margin-top: auto 0 25px; */
 }
 
 .p__cards {
@@ -496,6 +500,9 @@ div.col-12.border-bottom {
     padding: 60px;
 }
 
+section.jumbotron {
+    padding-bottom: 20px;
+}
 .faq {
     padding: 150px;
 }
